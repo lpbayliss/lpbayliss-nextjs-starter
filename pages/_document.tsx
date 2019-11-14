@@ -1,13 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { GlobalStyles } from '../components';
+import { default as GlobalStyles } from '../components/css-reset.component';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet"/>
+          <link
+            href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Amaranth&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <GlobalStyles />
@@ -15,7 +21,7 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 

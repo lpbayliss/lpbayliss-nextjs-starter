@@ -1,3 +1,21 @@
-This is a starter for NextJS 9
+# NextJS TypeScript Starter
 
-It has every I need to get started from general set up to styles with emotion and tailwind.
+## With Emotion, Tailwind, and Jest
+
+### What, and why...
+
+### TypeScript
+
+### NextJS
+
+### Emotion
+
+### Tailwind
+
+### Jest
+
+### directory structure
+
+### code quality
+
+- prettier

@@ -1,6 +1,6 @@
 import { Global, css } from '@emotion/core';
 
-const globalStyles: React.FunctionComponent = () =>
+const globalStyles: React.FunctionComponent = () => (
   <Global
     styles={css`
       *,
@@ -42,6 +42,7 @@ const globalStyles: React.FunctionComponent = () =>
         text-decoration: none;
       }
     `}
-  />;
+  />
+);
 
 export default globalStyles;

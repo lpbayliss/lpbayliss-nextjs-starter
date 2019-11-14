@@ -2,9 +2,12 @@ import Head from 'next/head';
 
 type Props = {
   title?: string;
-}
+};
 
-const Layout: React.FunctionComponent<Props> = ({ children, title = 'NextJS Starter Project' }) => {
+const Layout: React.FunctionComponent<Props> = ({
+  children,
+  title = 'NextJS Starter Project',
+}) => {
   return (
     <>
       <Head>
