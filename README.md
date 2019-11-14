@@ -1,6 +1,6 @@
 # NextJS TypeScript Starter
 
-## With Emotion, Tailwind, and Jest
+## With Emotion, Tailwind, Storybook and Jest + Enzyme
 
 ### What, and why...
 
@@ -12,7 +12,9 @@
 
 ### Tailwind
 
-### Jest
+### Jest & Enzyme
+
+### Storybook
 
 ### directory structure
 

@@ -8,6 +8,9 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml}\""
   },
   "keywords": [],
@@ -16,6 +19,10 @@
   "dependencies": {
     "@emotion/core": "^10.0.17",
     "@emotion/styled": "^10.0.17",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
     "@types/enzyme": "^3.10.3",
     "next": "^9.0.5",
     "react": "^16.9.0",
@@ -23,12 +30,16 @@
     "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
     "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@storybook/addon-knobs": "^5.2.6",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.7.5",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/storybook__react": "^4.0.2",
     "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
     "babel-plugin-macros": "^2.6.1",
     "dotenv": "^8.2.0",
     "enzyme": "^3.10.0",

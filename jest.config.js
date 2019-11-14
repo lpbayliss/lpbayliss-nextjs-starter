@@ -14,5 +14,14 @@ module.exports = {
     '<rootDir>/node_modules/',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  collectCoverage: false,
+  collectCoverage: true,
+  coverageDirectory: '.coverage',
+  coveragePathIgnorePatterns: [
+    '<rootDir>/.next/',
+    '<rootDir>/out/',
+    '<rootDir>/@types/',
+    '<rootDir>/interfaces/',
+    '<rootDir>/node_modules/',
+  ],
+  coverageThreshold: null,
 };

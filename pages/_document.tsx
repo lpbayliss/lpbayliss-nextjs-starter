@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { default as GlobalStyles } from '../components/css-reset.component';
+import { CSSReset } from '../components';
 
 class MyDocument extends Document {
   render() {
@@ -16,7 +16,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <GlobalStyles />
+          <CSSReset />
           <Main />
           <NextScript />
         </body>

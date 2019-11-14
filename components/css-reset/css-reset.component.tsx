@@ -1,6 +1,6 @@
 import { Global, css } from '@emotion/core';
 
-const globalStyles: React.FunctionComponent = () => (
+const CSSReset: React.FunctionComponent = () => (
   <Global
     styles={css`
       *,
@@ -45,4 +45,4 @@ const globalStyles: React.FunctionComponent = () => (
   />
 );
 
-export default globalStyles;
+export default CSSReset;
