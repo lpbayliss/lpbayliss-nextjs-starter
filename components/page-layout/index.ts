@@ -1,4 +1,1 @@
-export {
-  default as PageLayout,
-  Props as PageLayoutProps,
-} from './page-layout.component';
+export { default as PageLayout } from './page-layout.component';

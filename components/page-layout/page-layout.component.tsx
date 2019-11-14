@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export type Props = {
+type Props = {
   title?: string;
 };
 

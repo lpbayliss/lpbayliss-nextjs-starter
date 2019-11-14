@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export type Props = {
+type Props = {
   id: string;
   name: string;
   label: string;

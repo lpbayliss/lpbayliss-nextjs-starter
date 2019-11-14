@@ -1,3 +1,3 @@
-export { Button, ButtonProps } from './button';
+export { Button } from './button';
 export { CSSReset } from './css-reset';
-export { PageLayout, PageLayoutProps } from './page-layout';
+export { PageLayout } from './page-layout';

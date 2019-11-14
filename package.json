@@ -1,7 +1,8 @@
 {
-  "name": "agl-login-react",
+  "name": "lpbayliss-nextjs-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React starter kit using next.js, typescript, emotion, tailwindcss, jest + enzyme, storybook and prettier.",
+  "repository": "https://github.com/lpbayliss/nextjs-starter/blob/master/package.json",
   "main": "index.js",
   "scripts": {
     "develop": "next",
