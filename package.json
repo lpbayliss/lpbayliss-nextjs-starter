@@ -14,8 +14,15 @@
     "storybook:build": "build-storybook",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml}\""
   },
-  "keywords": [],
-  "author": "",
+  "husky": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm run test"
+  },
+  "lint-staged": {
+    "*": ["npm run prettier:fix", "git add"]
+  },
+  "keywords": ["react", "javascript", "typescript", "emotion", "nextjs", "taiwlind", "jest"],
+  "author": "Luke Bayliss",
   "license": "ISC",
   "dependencies": {
     "@emotion/core": "^10.0.17",
