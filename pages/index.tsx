@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { PageLayout } from '../components';
+import { withApollo } from '../utils/withApollo';
 
 const IndexPage: NextPage = () => {
   return (
@@ -15,4 +16,4 @@ const IndexPage: NextPage = () => {
   );
 };
 
-export default IndexPage;
+export default withApollo(IndexPage);
