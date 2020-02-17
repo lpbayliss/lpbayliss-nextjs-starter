@@ -19,9 +19,20 @@
     "pre-push": "npm run test"
   },
   "lint-staged": {
-    "*": ["npm run prettier:fix", "git add"]
+    "*": [
+      "npm run prettier:fix",
+      "git add"
+    ]
   },
-  "keywords": ["react", "javascript", "typescript", "emotion", "nextjs", "taiwlind", "jest"],
+  "keywords": [
+    "react",
+    "javascript",
+    "typescript",
+    "emotion",
+    "nextjs",
+    "taiwlind",
+    "jest"
+  ],
   "author": "Luke Bayliss",
   "license": "ISC",
   "dependencies": {
