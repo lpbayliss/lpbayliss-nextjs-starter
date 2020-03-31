@@ -43,7 +43,7 @@
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
     "@types/enzyme": "^3.10.3",
-    "next": "^9.0.5",
+    "next": "^9.3.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "tailwindcss": "^1.1.2"
