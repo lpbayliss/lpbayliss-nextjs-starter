@@ -1,27 +1,15 @@
-const TEST_REGEX = '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$';
-
 module.exports = {
-  setupFiles: ['<rootDir>/jest.setup.js'],
-  testRegex: TEST_REGEX,
+  roots: ['<rootDir>'],
+  moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
+  testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
+  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],
   transform: {
-    '^.+\\.tsx?$': 'babel-jest',
+    '^.+\\.(ts|tsx)$': 'babel-jest',
   },
-  testPathIgnorePatterns: [
-    '<rootDir>/.next/',
-    '<rootDir>/out/',
-    '<rootDir>/@types/',
-    '<rootDir>/interfaces/',
-    '<rootDir>/node_modules/',
-  ],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  collectCoverage: true,
-  coverageDirectory: '.coverage',
-  coveragePathIgnorePatterns: [
-    '<rootDir>/.next/',
-    '<rootDir>/out/',
-    '<rootDir>/@types/',
-    '<rootDir>/interfaces/',
-    '<rootDir>/node_modules/',
-  ],
-  coverageThreshold: null,
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
+  moduleNameMapper: {
+    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
+    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+  },
 };
