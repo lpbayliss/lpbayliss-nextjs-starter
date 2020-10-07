@@ -1,14 +1,39 @@
+import { Box, Heading, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/core';
 import { NextPage } from 'next';
-import { PageLayout } from '../components';
 
 const IndexPage: NextPage = () => {
   return (
-    <PageLayout title="@lpbayliss Starter">
-      <h1>
-        <a href="https://github.com/lpbayliss">@lpbayliss</a> Starter Project
-      </h1>
-      <p>This is a NextJs application with Typescript, Emotion (styled components) and TailwindCSS macros</p>
-    </PageLayout>
+    <Box m="auto" maxW="2xl" p="8">
+      <Heading as="h1" pb="4" textAlign="center" color="purple.500">
+        <Link href="https://github.com/lpbayliss">@lpbayliss</Link> Starter Project
+      </Heading>
+      <Box textAlign="center" p="2" m="4" borderWidth="1px" rounded="lg" shadow="sm">
+        <Text pb="3">This is a Next.js written in Typescript</Text>
+        <Text>Some of the libraries used include;</Text>
+        <List as="ul">
+          <ListItem>
+            <ListIcon icon="check-circle" color="purple.500" />
+            Chakra UI
+          </ListItem>
+          <ListItem>
+            <ListIcon icon="check-circle" color="purple.500" />
+            Emotion
+          </ListItem>
+          <ListItem>
+            <ListIcon icon="check-circle" color="purple.500" />
+            ESLint
+          </ListItem>
+          <ListItem>
+            <ListIcon icon="check-circle" color="purple.500" />
+            Prettier
+          </ListItem>
+          <ListItem>
+            <ListIcon icon="check-circle" color="purple.500" />
+            Storybook
+          </ListItem>
+        </List>
+      </Box>
+    </Box>
   );
 };
 
