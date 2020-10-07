@@ -1,5 +1,5 @@
 node_modules
-**/.next/**
-**/_next/**
-**/dist/**
-.coverage
+.next
+yarn.lock
+package-lock.json
+public
