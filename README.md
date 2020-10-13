@@ -6,11 +6,11 @@ This project is support to act as a starting point for any of my personal react 
 
 ## Some of the tools used in this project include;
 
-* [NextJS](https://nextjs.org/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Emotion](https://emotion.sh/)
-* [Chakra UI](https://chakra-ui.com/)
-* [Storybook](https://storybook.js.org/)
-* [ESLint](https://eslint.org/)
-* [Prettier](https://prettier.io/)
-* [Jest](https://jestjs.io/)
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Emotion](https://emotion.sh/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Storybook](https://storybook.js.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Jest](https://jestjs.io/)
